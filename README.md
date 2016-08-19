@@ -21,6 +21,8 @@ pce lads.
 (Thanks to matt11matthew & xFinityPro for contributing to the beta code.)
 
 
+Special note to all the dumb Dungeon Realms developers ready to get their little cock ready to hate: I did this in 5 days, lol.
+
 I will create a setup tutorial
 -matt11matthew
 
