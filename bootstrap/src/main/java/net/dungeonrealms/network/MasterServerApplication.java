@@ -28,8 +28,7 @@ public class MasterServerApplication {
 
         Log.info("");
         Log.info("Master server initiated on " + Constants.BUILD_VERSION + " Build " + Constants.BUILD_NUMBER);
-        Log.info("Alright. let's do this boys...");
-        Log.info("Ready to sit back relax and relay packets");
+        Log.info("Loading...");
 
         try {
             MasterServer server = new MasterServer();
