@@ -87,7 +87,7 @@ public class BetaHandler implements Handler.SuperHandler
     {
         for (TaskedHandler handler : taskedHandlers.values())
         {
-            handler.getLogger().log(Level.INFO, " -> (BETA) > Enabling..");
+            handler.getLogger().log(Level.INFO, " -> (BETA) > Disabling..");
             handler.onImmediateStop();
         }
         return true;
