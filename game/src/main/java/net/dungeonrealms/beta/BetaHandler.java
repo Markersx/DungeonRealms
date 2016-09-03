@@ -77,18 +77,6 @@ public class BetaHandler implements Handler.SuperHandler
             handler.getLogger().log(Level.INFO, " -> (BETA) > Enabling..");
             handler.onEnable();
         }
-
-        for (ListeningHandler handler : listeningHandlers.values())
-        {
-            handler.getLogger().log(Level.INFO, " -> (BETA) > Enabling..");
-            handler.onEnable();
-        }
-
-        for (TaskedHandler handler : taskedHandlers.values())
-        {
-            handler.getLogger().log(Level.INFO, " -> (BETA) > Enabling..");
-            handler.onEnable();
-        }
         CommandManager cm = new CommandManager();
         cm.registerCommand(new GMCommand("/gm", "/<command>", "GM Toggles", Arrays.asList("gamemaster", "gmtoggles", "gamemastertoggles")));
         return true;
