@@ -111,6 +111,8 @@ public class DungeonRealms extends JavaPlugin {
     private static HearthStone hs;
     private static Profile ps;
     private static TabCompleteCommands tcc;
+    
+
 
     // Shard Config
     public MechanicManager mm = null;
@@ -168,6 +170,9 @@ public class DungeonRealms extends JavaPlugin {
     }
 
     public void onEnable() {
+        if (developersOnly) {
+            return;
+        }
         SERVER_START_TIME = System.currentTimeMillis();
 
         Utils.log.info("DungeonRealms onEnable() ... STARTING UP");
@@ -576,5 +581,25 @@ public class DungeonRealms extends JavaPlugin {
 
         Utils.log.info("DungeonRealms onDisable() ... SHUTTING DOWN");
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    boolean developersOnly = true;
 
 }
